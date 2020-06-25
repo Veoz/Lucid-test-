@@ -1,0 +1,17 @@
+{
+  "name": "lucid",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Veoz <VEoz.id@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "app/libs",
+    "test",
+    "tests"
+  ]
+}

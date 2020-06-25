@@ -1,0 +1,56 @@
+@mixin clear-link{
+  text-decoration: none;
+  color: #fffefe;
+}
+@mixin pre-title{
+  color: #008ed6;
+  text-transform: uppercase;
+  font-weight: 600;
+
+}
+@mixin r-l-s{
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  margin: 1px;
+  background-color: #008ed6;
+}
+@mixin description{
+  color: #b4b4b4;
+  font-weight: 400;
+  font-size: 16px;
+}
+@mixin full-r-l-s($l-bot, $r-bot, $l-left, $r-right){
+  div.r-s, div.l-s{
+    @include r-l-s;
+  }
+  div.r-s{
+    right: $r-right;
+    bottom: $r-bot;
+  }
+  div.l-s{
+    left: $l-left;
+    bottom: $l-bot;
+  }
+}
+@mixin hover-button{
+  div.button{
+    margin: 60px 0 0 0;
+    :last-child{
+      margin-left: 20px;
+      padding: 15px 24px 15px ;
+    }
+    :hover{
+      background-color: #008ed6;
+    }
+    a{
+      padding: 15px 24px 15px;
+      border: 1px solid rgb(255, 255, 255);
+      border-radius: 4px;
+      @include clear-link;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+}
