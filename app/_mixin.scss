@@ -42,10 +42,11 @@
     }
     :hover{
       background-color: #008ed6;
+      border: 1px solid #008ed6;
     }
     a{
       padding: 15px 24px 15px;
-      border: 1px solid rgb(255, 255, 255);
+      border: 1px solid rgba(255, 255, 255, 0.2);
       border-radius: 4px;
       @include clear-link;
       text-transform: uppercase;
